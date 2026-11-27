@@ -10,6 +10,28 @@ A React application built with Vite, TypeScript, Tailwind CSS, and React Router,
 - **React Router (`react-router-dom`):** Routing between `/login`, `/home`, and `/user/:id`.
 - **Jest & React Testing Library:** Unit and component testing with `jest`, `ts-jest`, `jest-environment-jsdom`, `@testing-library/react`, and `@testing-library/jest-dom`.
 
+## Steps to Get Started with the Project
+
+Install Dependencies
+
+npm install
+
+Start Development Server
+
+npm run dev
+
+Run Tests
+
+npm test
+
+Build for Production
+
+npm run build
+
+Preview Production Build
+
+npm run preview
+
 ## Features
 
 - **Login (`src/pages/Login.tsx`):** Uses the `useKenyaPhone` hook (`src/hooks/useKenyaPhone.ts`) to show an immediate error while typing if a non-`+254` prefix is entered, validates the phone number on form submission, and stores `isLoggedIn` in `localStorage` upon successful login.
