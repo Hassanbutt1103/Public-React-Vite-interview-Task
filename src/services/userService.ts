@@ -1,3 +1,5 @@
+import { url } from "../config/api";
+
 export interface User {
   id: number;
   name: string;
@@ -17,7 +19,7 @@ export interface User {
   };
 }
 
-const API_URL = "https://jsonplaceholder.typicode.com";
+const API_URL = url.apiBaseUrl;
 
 export const getUsers = async (): Promise<User[]> => {
   const response = await fetch(`${API_URL}/users`);

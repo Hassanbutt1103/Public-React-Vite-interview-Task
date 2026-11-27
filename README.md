@@ -12,26 +12,27 @@ A React application built with Vite, TypeScript, Tailwind CSS, and React Router,
 
 ## Features
 
-- **Login (`src/pages/Login.tsx`):** Uses the `useKenyaPhone` hook (`src/hooks/useKenyaPhone.ts`) to show an immediate error while typing if a non-`+254` prefix is entered, and validates the phone number on form submission.
+- **Login (`src/pages/Login.tsx`):** Uses the `useKenyaPhone` hook (`src/hooks/useKenyaPhone.ts`) to show an immediate error while typing if a non-`+254` prefix is entered, validates the phone number on form submission, and stores `isLoggedIn` in `localStorage` upon successful login.
 - **Users List (`src/pages/Home.tsx`):** Loads users through `userService` (`src/services/userService.ts`), filters by search input, and navigates to each user's profile.
 - **User Details (`src/pages/UserDetails.tsx`):** Shows personal, address, and company information for a selected user, along with loading and error states.
 - **Public Assets:** Uses `/logo/logo.jpeg` and `/LoginPage/login.jpeg` from `public/`.
 
 ## Project Structure
 
-
-src/
-├── context/
-│   └── AuthContext.tsx
-├── hooks/
-│   ├── useKenyaPhone.ts
-│   └── useKenyaPhone.test.ts
-├── pages/
-│   ├── Home.tsx
-│   ├── Login.tsx
-│   ├── Login.test.tsx
-│   └── UserDetails.tsx
-├── services/
-│   └── userService.ts
-├── setupEnv.ts
-└── setupTests.ts
+src
+> config
+> > api.ts
+> context
+> > AuthContext.tsx
+> hooks
+> > useKenyaPhone.ts
+> > useKenyaPhone.test.ts
+> pages
+> > Home.tsx
+> > Login.tsx
+> > Login.test.tsx
+> > UserDetails.tsx
+> services
+> > userService.ts
+> setupEnv.ts
+> setupTests.ts
