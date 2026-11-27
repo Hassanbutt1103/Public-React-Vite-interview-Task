@@ -19,6 +19,7 @@ A React application built with Vite, TypeScript, Tailwind CSS, and React Router,
 
 ## Project Structure
 
+```text
 src
 > config
 > > api.ts
