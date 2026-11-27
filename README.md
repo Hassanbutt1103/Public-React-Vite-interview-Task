@@ -31,7 +31,6 @@ npm run build
 Preview Production Build
 
 npm run preview
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
 ## Features
 
